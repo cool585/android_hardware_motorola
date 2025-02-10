@@ -1,3 +1,5 @@
+CONFIG_PATH := hardware/motorola/ViPER4AndroidFX
+
 # SEPolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(CONFIG_PATH)/sepolicy/vendor
 
