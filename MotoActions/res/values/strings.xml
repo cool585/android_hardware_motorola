@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="doze_settings_help_title">Doze settings</string>
+    <string name="doze_settings_help_text">Enable Doze to save battery. Configure Doze behaviour in these settings.</string>
+    <string name="dialog_ok">OK</string>
+</resources>
