@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.lineageos.settings.device"
     android:sharedUserId="android.uid.system"
@@ -11,16 +15,19 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
 
     <protected-broadcast android:name="com.android.systemui.doze.pulse" />
 
     <application
         android:allowBackup="true"
         android:label="@string/device_settings_app_name"
-        android:persistent="true">
+        android:persistent="true"
+        android:theme="@style/Theme.SubSettingsBase.Expressive">
 
         <receiver
-            android:name="org.lineageos.settings.device.BootCompletedReceiver"
+            android:name=".BootCompletedReceiver"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
@@ -28,16 +35,15 @@
             </intent-filter>
         </receiver>
 
-        <service android:name="org.lineageos.settings.device.MotoActionsService"
-            android:permission="MotoActionsService"
-            android:exported="false">
-        </service>
+        <service
+            android:name=".MotoActionsService"
+            android:exported="false"
+            android:permission="MotoActionsService" />
 
         <activity
             android:name=".DozePreferenceActivity"
             android:exported="false"
-            android:label="@string/ambient_display_gestures_title"
-            android:theme="@style/Theme.SubSettingsBase">
+            android:label="@string/ambient_display_gestures_title">
             <intent-filter>
                 <action android:name="org.lineageos.settings.device.DOZE_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -47,10 +53,10 @@
         <activity
             android:name=".ActionsPreferenceActivity"
             android:exported="false"
-            android:label="@string/moto_gestures_panel_title"
-            android:theme="@style/Theme.SubSettingsBase">
+            android:label="@string/moto_gestures_panel_title">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
+                <action android:name="org.lineageos.settings.device.ACTIONS_SETTINGS" />
             </intent-filter>
             <meta-data
                 android:name="com.android.settings.category"

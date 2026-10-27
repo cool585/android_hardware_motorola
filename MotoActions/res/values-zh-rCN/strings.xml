@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Assistant key -->
+    <string name="assistant_button_title">助手键</string>
+    <string name="assistant_button_action">助手键自定义操作</string>
+
+    <!-- Actions -->
+    <string name="action_none">无</string>
+    <string name="action_home">主页</string>
+    <string name="action_power">开启/关闭屏幕</string>
+    <string name="action_wake">唤醒</string>
+    <string name="action_back">返回</string>
+    <string name="action_recents">最近应用</string>
+    <string name="action_last_app">上一个应用</string>
+    <string name="action_volume_up">音量加</string>
+    <string name="action_volume_down">音量减</string>
+    <string name="action_voice_assistant">语音助手</string>
+    <string name="action_play_pause">播放/暂停</string>
+    <string name="action_previous_track">上一曲</string>
+    <string name="action_next_track">下一曲</string>
+    <string name="action_flashlight">手电筒</string>
+    <string name="action_camera">打开相机</string>
+    <string name="action_screenshot">屏幕截图</string>
+    <string name="action_pip">画中画模式</string>
+</resources>

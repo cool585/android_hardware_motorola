@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Assistant key -->
+    <string name="assistant_button_title">Botão do assistente</string>
+    <string name="assistant_button_action">Botão do assistente</string>
+
+    <!-- Actions -->
+    <string name="action_none">Nenhum</string>
+    <string name="action_home">Início</string>
+    <string name="action_power">Ligar/desligar tela</string>
+    <string name="action_wake">Acordar</string>
+    <string name="action_back">Voltar</string>
+    <string name="action_recents">Recentes</string>
+    <string name="action_last_app">Último app</string>
+    <string name="action_volume_up">Aumentar volume</string>
+    <string name="action_volume_down">Diminuir volume</string>
+    <string name="action_voice_assistant">Assistente de voz</string>
+    <string name="action_play_pause">Reproduzir/pausar</string>
+    <string name="action_previous_track">Faixa anterior</string>
+    <string name="action_next_track">Próxima faixa</string>
+    <string name="action_flashlight">Lanterna</string>
+    <string name="action_camera">Abrir câmera</string>
+    <string name="action_screenshot">Captura de tela</string>
+    <string name="action_pip">Modo Picture-in-Picture</string>
+</resources>

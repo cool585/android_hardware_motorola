@@ -1,8 +1,13 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
 android_app {
     name: "MotoActions",
     defaults: ["SettingsLibDefaults"],
 
-    srcs: ["src/**/*.java"],
+    srcs: ["src/**/*.kt"],
     resource_dirs: ["res"],
 
     certificate: "platform",
@@ -16,6 +21,8 @@ android_app {
     ],
 
     optimize: {
+        optimize: true,
         proguard_flags_files: ["proguard.flags"],
+        shrink_resources: true,
     },
 }

@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="doze_settings_help_title">Doze settings</string>
-    <string name="doze_settings_help_text">Enable Doze to save battery. Configure Doze behaviour in these settings.</string>
-    <string name="dialog_ok">OK</string>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Assistant key -->
+    <string name="assistant_button_title">Assistant button</string>
+    <string name="assistant_button_action">Assistant key custom action</string>
+
+    <!-- Actions -->
+    <string name="action_none">None</string>
+    <string name="action_home">Home</string>
+    <string name="action_power">Screen on/off</string>
+    <string name="action_wake">Wake</string>
+    <string name="action_back">Back</string>
+    <string name="action_recents">Recents</string>
+    <string name="action_last_app">Last app</string>
+    <string name="action_volume_up">Volume up</string>
+    <string name="action_volume_down">Volume down</string>
+    <string name="action_voice_assistant">Voice assistant</string>
+    <string name="action_play_pause">Play/pause</string>
+    <string name="action_previous_track">Previous track</string>
+    <string name="action_next_track">Next track</string>
+    <string name="action_flashlight">Flashlight on/off</string>
+    <string name="action_camera">Open camera</string>
+    <string name="action_screenshot">Take screenshot</string>
+    <string name="action_pip">Picture-in-Picture mode</string>
 </resources>
